@@ -156,11 +156,13 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
 }
-.card-container{
+.announcements .card-container
+, .trending .card-container{
     background-color: #ffffff;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1); 
 }
 
 .announcements > .card-container{
@@ -233,6 +235,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     border-left: 8px solid #afa0b4;
+    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 .your-projects .card-item .project-name{
     font-size: 18px;
