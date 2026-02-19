@@ -8,7 +8,7 @@
 body{
     /* Grid parent */
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 260px 5fr;
     grid-template-rows: 1fr 6fr;
     height: 100vh;
 
@@ -51,7 +51,7 @@ body{
 }
 .sidebar ul li{
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.em;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -71,7 +71,7 @@ body{
     position: relative; 
     z-index: 10;
 }
-.header .icon{
+.icon{
     height: 28px;
 }
 .header-row-top{
@@ -160,7 +160,7 @@ body{
     background-color: #ffffff;
     width: 100%;
     height: 100%;
-    border-radius: 16px;
+    border-radius: 10px;
 }
 
 .announcements > .card-container{
@@ -210,4 +210,36 @@ body{
 }
 .trending .card-item .trending-repo{
     color: #636363;
+}
+
+
+.your-projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+.your-projects .card-container{
+    background-color: #e2e8f0;
+}
+.your-projects .card-item{
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+.your-projects .card-item .project-name{
+    font-size: 18px;
+    font-weight: 550;
+}
+.your-projects .card-item .project-desc{
+    font-size: 16px;
+    color: #636363;
+}
+.your-projects .project-action{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: end;
 }
