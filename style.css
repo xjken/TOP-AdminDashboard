@@ -139,7 +139,7 @@ body{
     background-color: #e2e8f0;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: minmax(400px, 3fr) minmax(250px, 300px);
     gap: 1em;
     padding: 2em 1em;
 }
